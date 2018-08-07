@@ -8,7 +8,7 @@ You will be building a Xamarin application to draw a route on a map between two 
 
 ### User Stories
 
-- As a user I can enter IATA codes of an origin and a destination airport and view a path between the two on a map. Airports in the data set with a null IATA code are provided in the dataset for the sake of completeness, and may be omitted.
+- As a user I can enter IATA codes of an origin and a destination airport and view a path between the two on a map. Airports in the data set with a null IATA code are provided for the sake of completeness, and may be omitted.
 - As a user I am provided meaningful feedback should no route exist between the airports.
 - As a user I am provided meaningful feedback if information entered is incorrect.
 
