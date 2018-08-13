@@ -4,7 +4,7 @@ At Guestlogix we feel that putting developers on the spot with advanced algorith
 
 ### What is the test?
 
-You will be building a Xamarin application to draw a route on a map between two (or more) airports. Included in this repository is a set of Airport, Airline, and Route data. Your task is to provide the user with a form to enter the origin and destination airports and display a route that connects them (if any).
+You will be building a Xamarin application to draw a route on a map between two (or more) airports. Included in this repository is a set of Airport, Airline, and Route data. Your task is to provide the user with a form to enter the origin and destination airports and display a route that connects them (if any). If a route between the origin and destination includes more than one stopover, the line drawn on the map must go through all airports in order.
 
 ### User Stories
 
