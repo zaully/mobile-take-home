@@ -27,4 +27,4 @@ Note however, that no third party libraries may be used. You can use any native 
 
 ### Questions
 
-If you have any questions during the challenge feel free to email Peter Samsonov at psamsonov@guestlogix.com. Whether it be a question about the requirements, submitting, anything, just send the email!
+If you have any questions during the challenge feel free to email recruitment@guestlogix.com. Whether it be a question about the requirements, submitting, anything, just send the email!
