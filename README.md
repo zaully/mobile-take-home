@@ -1,30 +1,50 @@
-# Guestlogix Take Home Test - Mobile
+### Guestlogix Take Home Test - Mobile
 
 At Guestlogix we feel that putting developers on the spot with advanced algorithmic puzzles doesn’t exactly highlight one’s true skillset. The intention of this assessment is to see how you approach and tackle a problem in the real world, not quivering in front of a whiteboard.
 
 ### What is the test?
 
-You will be building a mobile application to draw a route on a map between two (or more) airports. Included in this repository is a set of Airport, Airline, and Route data. Your task is to provide the user with a form to enter the origin and destination airports and display a route that connects them (if any). If a route between the origin and destination includes more than one stopover, the line drawn on the map must go through all airports in order.
+You will be building a mobile application that displays a list of Rick and Morty episodes. If the user taps on an episode another list should appear showing the characters in that episode split into dead or alive (you're free to decide how to implement this split) and displayed in the order in which they were created. If the user taps on a character then a screen showing the character's picture and information should appear.
+
+For bonus points (not mandatory) you can add functionality to kill a character (the way to kill a character is completely up to you, a swipe, a button, etc). If a character dies then everything should update accordingly.
 
 ### User Stories
 
-- As a user I can enter IATA codes of an origin and a destination airport and view a path between the two on a map. Airports in the data set with a null IATA code are provided for the sake of completeness, and may be omitted.
-- As a user I can enter IATA codes of an origin and destination airport that are not connected by a direct route. In this case, the route drawn on the map must show the shortest possible travel path between the two airports, going through all airports visited along the way in order. For the sake of simplicity, the shortest path is defined as the one with the least transfer (ie. it will take the same amount of time to travel between two airports, regardless of the physical distance between them). Keep in mind that an indirect route can go through more than one transfer airport before it reaches its final destination.
-- As a user I am provided meaningful feedback should no route exist between the airports.
-- As a user I am provided meaningful feedback if information entered is incorrect.
+    The first thing a user should see is a list of episodes.
+    If the user taps into an episode and see a list of characters with a clear distinction between dead and alive characters
+    if the user taps into a character and see its information and picture
+    Bonus functionality: The user should have the ability to kill a character and if a character gets kill the character lists should update accordingly
+
+### Evaluation criteria
+
+Your submission will be evaluated on the following aspects
+
+    Completeness
+    Correct application of SOLID principles
+    Efficiency
+    Correct application of architectural patterns
+    Code readability and expressiveness
+    If there is a problem, the app fails gracefully
+    While we favour functionality over UI/UX your submission should be easy to use (from a user's perspective)
+    Your solution has to compile
 
 ### Requirements
 
-The application must be done in a native language that runs on the Android or iOS platforms. Otherwise, you have complete freedom in terms of how you implement the solution, as long as all user requirements are met.
+The application may be done in Java or Swift. Otherwise, you have complete freedom in terms of how you implement the solution, as long as all user requirements are met.
 
 Note however, that no third party libraries may be used. You can use any native tools available to you from the platform, but no open sourced, or third party libraries.
 
+### Project's API
+
+https://rickandmortyapi.com/
+
 ### Submitting
 
-1. Fork this repository and provide your solution.
-2. Run through it one last time to make sure it works!
-3. Send an email to indicate that you have completed the challenge. 
+    Fork this repository and provide a link to the repo with your solution.
+    Run through it one last time to make sure it works!
+    Send an email to indicate that you have completed the challenge.
 
 ### Questions
 
-If you have any questions during the challenge feel free to email recruitment@guestlogix.com. Whether it be a question about the requirements, submitting, anything, just send the email!
+If you have any questions during the challenge feel free to email recruitment@guestlogix.com Whether it be a question about the requirements, submitting, anything, just send the email!
+
