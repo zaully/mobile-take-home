@@ -10,23 +10,23 @@ For bonus points (not mandatory) you can add functionality to kill a character (
 
 ### User Stories
 
-    The first thing a user should see is a list of episodes.
-    If the user taps into an episode and see a list of characters with a clear distinction between dead and alive characters
-    if the user taps into a character and see its information and picture
-    Bonus functionality: The user should have the ability to kill a character and if a character gets kill the character lists should update accordingly
+* The first thing a user should see is a list of episodes.
+* If the user taps into an episode the app has to display a list of characters with a clear distinction between dead and alive characters
+* If the user taps into a character the app has to display that character's information and picture
+* Bonus functionality: The user should have the ability to kill a character and if a character gets kill the character lists should update accordingly
 
 ### Evaluation criteria
 
 Your submission will be evaluated on the following aspects
 
-    Completeness
-    Correct application of SOLID principles
-    Efficiency
-    Correct application of architectural patterns
-    Code readability and expressiveness
-    If there is a problem, the app fails gracefully
-    While we favour functionality over UI/UX your submission should be easy to use (from a user's perspective)
-    Your solution has to compile
+   * Completeness
+   * Correct application of SOLID principles
+   * Efficiency
+   * Correct application of architectural patterns
+   * Code readability and expressiveness
+   * If there is a problem, the app fails gracefully
+   * While we favour functionality over UI/UX your submission should be easy to use (from a user's perspective)
+   * Your solution has to compile
 
 ### Requirements
 
@@ -40,9 +40,9 @@ https://rickandmortyapi.com/
 
 ### Submitting
 
-    Fork this repository and provide a link to the repo with your solution.
-    Run through it one last time to make sure it works!
-    Send an email to indicate that you have completed the challenge.
+1. Fork this repository and work on the challenge.
+2. Run through it one last time to make sure it works!
+3. Send an email with a link to your forked repository to indicate that you have completed the challenge.
 
 ### Questions
 
