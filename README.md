@@ -30,9 +30,9 @@ Your submission will be evaluated on the following aspects
 
 ### Requirements
 
-The application may be done in Java or Swift. Otherwise, you have complete freedom in terms of how you implement the solution, as long as all user requirements are met.
+The application may be done in **Java or Swift** (No Kotlin, no Obj-C). Otherwise, you have complete freedom in terms of how you implement the solution, as long as all user requirements are met.
 
-Note however, that no third party libraries may be used. You can use any native tools available to you from the platform, but no open sourced, or third party libraries.
+Note however, that **no third party libraries may be used**. You can use any native tools available to you from the platform, but no open sourced, or third party libraries.
 
 ### Project's API
 
