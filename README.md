@@ -22,7 +22,7 @@ Your submission will be evaluated on the following aspects
    * Completeness
    * Correct application of SOLID principles
    * Efficiency
-   * Correct application of architectural patterns
+   * Correct application of architectural patterns (we suggest MVC, but if you want to use a different one make sure it is readable and applied correctly)
    * Code readability and expressiveness
    * If there is a problem, the app fails gracefully
    * While we favour functionality over UI/UX your submission should be easy to use (from a user's perspective)
