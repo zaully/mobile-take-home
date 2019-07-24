@@ -10,7 +10,7 @@ import Foundation
 
 enum EpisodeLoadAllResult {
     case success(episodes: [Episode], episodeCount: Int, page: Int, pageCount: Int)
-    case failed(error: Error)
+    case failure(error: Error)
 }
 
 protocol EpisodeService: class {
@@ -36,7 +36,7 @@ class EpisodeServiceImpl: EpisodeService {
         http.request(url: "https://rickandmortyapi.com/api/episode?page=\(page + 1)", method: .get) { (result) in
             switch result {
             case .failure(let error):
-                completion?(.failed(error: error))
+                completion?(.failure(error: error))
             case .success(let json):
                 self.handleResponse(json: json, for: page)
             }

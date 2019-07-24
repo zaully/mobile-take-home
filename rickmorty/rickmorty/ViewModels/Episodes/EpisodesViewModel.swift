@@ -58,7 +58,7 @@ class EpisodesViewModelImpl: EpisodesViewModel {
         loading = toLoad
         service.loadEpisodes(for: toLoad) { [weak self] (result) in
             switch result {
-            case .failed(let error):
+            case .failure(let error):
                 self?.view?.handle(viewEvent: .error(error))
             case .success(let episodes, _, let page, let pageCount):
                 self?.handleSuccess(episodes: episodes, page: page, totalPages: pageCount)

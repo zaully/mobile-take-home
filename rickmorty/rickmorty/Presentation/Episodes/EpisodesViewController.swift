@@ -42,6 +42,15 @@ class EpisodesViewController: UITableViewController {
         tableView.deselectRow(at: indexPath, animated: true)
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        guard let sender = sender as? UITableViewCell,
+            let vc = segue.destination as? CharactersViewController,
+            let row = tableView.indexPath(for: sender)?.row, let episode = vm.getEpisode(index: row) else {
+            return
+        }
+        vc.characterUrls = episode.characters
+    }
 }
 
 extension EpisodesViewController: EpisodesView {
