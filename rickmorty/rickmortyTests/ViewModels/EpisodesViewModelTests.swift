@@ -38,7 +38,7 @@ class EpisodesViewModelTests: XCTestCase {
 
     func testLoadsEpisodesError() {
         service.loadEpisodesMock = { (_, completion) in
-            completion?(.failed(error: HttpServiceError.invalidResponse))
+            completion?(.failure(error: HttpServiceError.invalidResponse))
         }
         var checked = false
         view.handleMock = { (event) in

@@ -11,6 +11,7 @@ import Foundation
 enum CharactersViewEvent {
     case error(Error)
     case didLoad(character: Character, forIndex: Int)
+    case reload(index: Int)
 }
 
 protocol CharactersView: class {
@@ -21,6 +22,7 @@ protocol CharactersViewModel: class {
     var view: CharactersView? { get set }
     var totalCharacters: Int { get }
     func getCharacter(index: Int) -> Character?
+    func killCharacter(at index: Int)
 }
 
 class CharactersViewModelImpl: CharactersViewModel {
@@ -56,5 +58,13 @@ class CharactersViewModelImpl: CharactersViewModel {
             }
         }
         return nil
+    }
+
+    func killCharacter(at index: Int) {
+        guard index >= 0, index < totalCharacters else { return }
+        if let found = service.getCharacter(with: characterUrls[index]), found.canBeKilled {
+            found.characterStatus = .dead
+            view?.handle(viewEvent: .reload(index: index))
+        }
     }
 }

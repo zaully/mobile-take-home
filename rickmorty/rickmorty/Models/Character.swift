@@ -23,8 +23,10 @@ protocol Character: class {
     var gender: String { get }
     var image: String { get }
     var characterOrigin: CharacterOrigin { get }
+    var characterLocation: CharacterLocation { get }
 
     var speciesAndTypeOrGender: String { get }
+    var canBeKilled: Bool { get }
 }
 
 class CharacterModel: Character, Codable {
@@ -36,6 +38,7 @@ class CharacterModel: Character, Codable {
     let gender: String
     let image: String
     let origin: CharacterOriginModel
+    let location: CharacterLocationModel
 }
 
 extension CharacterModel {
@@ -53,7 +56,15 @@ extension CharacterModel {
         return origin
     }
 
+    var characterLocation: CharacterLocation {
+        return location
+    }
+
     var speciesAndTypeOrGender: String {
         return species + " " + (type.isEmpty ? gender : type)
+    }
+
+    var canBeKilled: Bool {
+        return characterStatus != .dead
     }
 }

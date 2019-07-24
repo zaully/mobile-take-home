@@ -28,6 +28,8 @@
 		889156FE22E7F8D800885548 /* CharacterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889156FD22E7F8D800885548 /* CharacterService.swift */; };
 		8891570022E80E1600885548 /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889156FF22E80E1600885548 /* CharacterCell.swift */; };
 		8891570322E8130700885548 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8891570222E8130700885548 /* ImageService.swift */; };
+		8891570622E81E0E00885548 /* CharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8891570522E81E0E00885548 /* CharacterViewController.swift */; };
+		8891570822E82D4300885548 /* CharacterLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8891570722E82D4300885548 /* CharacterLocation.swift */; };
 		88BF6E8422E7CF9B00A0AAF0 /* EpisodesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BF6E8322E7CF9B00A0AAF0 /* EpisodesViewModelTests.swift */; };
 		88BF6E8822E7D16A00A0AAF0 /* MockEpisodeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BF6E8722E7D16A00A0AAF0 /* MockEpisodeService.swift */; };
 		88BF6E8B22E7D60D00A0AAF0 /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BF6E8A22E7D60D00A0AAF0 /* String+Localization.swift */; };
@@ -67,6 +69,8 @@
 		889156FD22E7F8D800885548 /* CharacterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterService.swift; sourceTree = "<group>"; };
 		889156FF22E80E1600885548 /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
 		8891570222E8130700885548 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		8891570522E81E0E00885548 /* CharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewController.swift; sourceTree = "<group>"; };
+		8891570722E82D4300885548 /* CharacterLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterLocation.swift; sourceTree = "<group>"; };
 		88BF6E7822E7CF7800A0AAF0 /* rickmortyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rickmortyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88BF6E7C22E7CF7800A0AAF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88BF6E8322E7CF9B00A0AAF0 /* EpisodesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesViewModelTests.swift; sourceTree = "<group>"; };
@@ -141,6 +145,7 @@
 		881DBB3922E65E9000CFA487 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				8891570422E81DFE00885548 /* Character */,
 				889156F222E7F4E100885548 /* Characters */,
 				881DBB4D22E6B67B00CFA487 /* Episodes */,
 				88BF6E8922E7D5FB00A0AAF0 /* Localization */,
@@ -153,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				889156F822E7F55C00885548 /* Character.swift */,
+				8891570722E82D4300885548 /* CharacterLocation.swift */,
 				889156FA22E7F64C00885548 /* CharacterOrigin.swift */,
 				881DBB4B22E6B02800CFA487 /* Episode.swift */,
 			);
@@ -265,6 +271,14 @@
 				8891570222E8130700885548 /* ImageService.swift */,
 			);
 			path = Image;
+			sourceTree = "<group>";
+		};
+		8891570422E81DFE00885548 /* Character */ = {
+			isa = PBXGroup;
+			children = (
+				8891570522E81E0E00885548 /* CharacterViewController.swift */,
+			);
+			path = Character;
 			sourceTree = "<group>";
 		};
 		88BF6E7922E7CF7800A0AAF0 /* rickmortyTests */ = {
@@ -413,6 +427,7 @@
 			files = (
 				881DBB2922E65E4600CFA487 /* EpisodesViewController.swift in Sources */,
 				889156FB22E7F64C00885548 /* CharacterOrigin.swift in Sources */,
+				8891570822E82D4300885548 /* CharacterLocation.swift in Sources */,
 				88BF6E8B22E7D60D00A0AAF0 /* String+Localization.swift in Sources */,
 				881DBB4822E6AC7100CFA487 /* Thread.swift in Sources */,
 				881DBB5222E6B91900CFA487 /* EpisodesViewModel.swift in Sources */,
@@ -427,6 +442,7 @@
 				8891570022E80E1600885548 /* CharacterCell.swift in Sources */,
 				881DBB4F22E6B7FA00CFA487 /* EpisodeCell.swift in Sources */,
 				881DBB2722E65E4600CFA487 /* AppDelegate.swift in Sources */,
+				8891570622E81E0E00885548 /* CharacterViewController.swift in Sources */,
 				881DBB3F22E6656600CFA487 /* HttpService.swift in Sources */,
 				889156FE22E7F8D800885548 /* CharacterService.swift in Sources */,
 			);

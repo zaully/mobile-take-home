@@ -30,6 +30,34 @@ class CharactersViewController: UITableViewController {
         }
         return cell
     }
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+
+    override func tableView(_ tableView: UITableView,
+                            leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        if let character = vm.getCharacter(index: indexPath.row), character.canBeKilled {
+            let action = UIContextualAction(style: .destructive, title: "Instakill".localized) { (_, _, completion) in
+                self.vm.killCharacter(at: indexPath.row)
+                completion(false)
+            }
+            let conf = UISwipeActionsConfiguration(actions: [action])
+            conf.performsFirstActionWithFullSwipe = true
+            return conf
+        }
+        return nil
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        guard let sender = sender as? UITableViewCell,
+            let vc = segue.destination as? CharacterViewController,
+            let row = tableView.indexPath(for: sender)?.row, let character = vm.getCharacter(index: row) else {
+                return
+        }
+        vc.character = character
+    }
 }
 
 extension CharactersViewController: UITableViewDataSourcePrefetching {
@@ -46,6 +74,8 @@ extension CharactersViewController: CharactersView {
             if let cell = tableView.cellForRow(at: IndexPath(row: index, section: 0)) as? CharacterCell {
                 cell.config(character)
             }
+        case .reload(let index):
+            tableView.reloadRows(at: [IndexPath(row: index, section: 0)], with: .automatic)
         }
     }
 }
